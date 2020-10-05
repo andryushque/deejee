@@ -6,10 +6,16 @@
     justify-content: space-between
 
   .logo
+    display: flex
+    align-items: center
+    height: 7rem
+    transition: color 0.4s ease
     @include title($font-size: 3.2rem, $line-height: 1, $text-transform: capitalize)
     &__text
       &--accent
         color: $color-accent
+    &:hover
+      color: $color-accent
 
   .nav
     &__list
@@ -45,7 +51,7 @@
         opacity: 0
         visibility: hidden
         padding: 1rem 2rem
-        border-bottom: 3px solid $color-accent
+        border-bottom: 2px solid $color-accent
         background-color: $color-light
         transition: margin-top 0.4s ease, opacity 0.4s ease, visibility 0.4s ease
 
@@ -96,7 +102,7 @@
         opacity: 0
         visibility: hidden
         padding: 1rem 2rem
-        border-bottom: 3px solid $color-accent
+        border-bottom: 2px solid $color-accent
         background-color: $color-light
         transition: left 0.4s ease, opacity 0.4s ease, visibility 0.4s ease
 
@@ -107,3 +113,43 @@
             margin-top: 0
             opacity: 1
             visibility: visible
+
+  // Mobile menu
+  .mmenubtn
+    font-size: 2.4rem
+    transition: color 0.4s ease
+    &:hover
+      color: $color-accent
+    &--open
+      display: none
+      color: $color-light
+    &--close
+      display: inline-block
+      margin-bottom: 4rem
+      color: $color-grey
+
+  .mmenu
+    position: fixed
+    top: 0
+    right: -20rem
+    z-index: 1000
+    width: 20rem
+    height: calc(100vh)
+    padding: 4rem 2rem
+    opacity: 0
+    border-left: 2px solid $color-accent
+    background-color: $color-light
+    transition: right 0.4s ease, opacity 0.4s ease
+    overflow-y: auto
+    text-align: right
+    &--visible
+      right: 0
+      opacity: 1
+
+    &__item
+      margin-bottom: 1rem
+    &__link
+      transition: color 0.4s ease
+      @include text($font-size: 1.8rem, $color: $color-grey)
+      &:hover
+        color: $color-accent
