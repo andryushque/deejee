@@ -1,5 +1,11 @@
 .header
+  position: absolute
+  top: 0
+  right: 0
+  left: 0
+  width: 100%
   padding-top: 2.4rem
+  background-color: transparent
   &-wrapper
     display: flex
     align-items: center
@@ -30,7 +36,7 @@
       height: 7rem
       padding: 0 2rem
       transition: color 0.4s ease
-      @include text($font-size: 1.8rem, $line-height: 7rem, $color: rgba($color-light, 0.5))
+      @include text($font-size: 1.8rem, $line-height: 7rem, $color: rgba($color-light, 0.8))
       &:hover
         color: $color-light
       i
