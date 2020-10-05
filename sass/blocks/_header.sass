@@ -1,0 +1,109 @@
+.header
+  padding-top: 2.4rem
+  &-wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  .logo
+    @include title($font-size: 3.2rem, $line-height: 1, $text-transform: capitalize)
+    &__text
+      &--accent
+        color: $color-accent
+
+  .nav
+    &__list
+      display: flex
+      align-items: center
+    &__item
+      &:last-child
+        .nav
+          &__link
+            padding: 0 0 0 2rem
+    &__link
+      height: 7rem
+      padding: 0 2rem
+      transition: color 0.4s ease
+      @include text($font-size: 1.8rem, $line-height: 7rem, $color: rgba($color-light, 0.5))
+      &:hover
+        color: $color-light
+      i
+        font-size: 1.4rem
+        margin-left: 0.5rem
+
+  .dropdown
+    position: relative
+    &__list
+      &--level1
+        position: absolute
+        top: 7rem
+        left: 0
+        z-index: 10
+        min-width: 20rem
+        margin-top: 3rem
+
+        opacity: 0
+        visibility: hidden
+        padding: 1rem 2rem
+        border-bottom: 3px solid $color-accent
+        background-color: $color-light
+        transition: margin-top 0.4s ease, opacity 0.4s ease, visibility 0.4s ease
+
+        // triangle on the top
+        &::before
+          content: ""
+          position: absolute
+          top: -1.2rem
+          left: 4rem
+          width: 0
+          height: 0
+          border: 0 solid transparent
+          border-right-width: 1.2rem
+          border-left-width: 1.2rem
+          border-bottom: 1.2rem solid $color-light
+
+        .dropdown
+          &__item
+            margin: 2rem 0
+            &--submenu
+              position: relative
+              // open submenu level 2
+              &:hover
+                .dropdown
+                  &__list
+                    &--level2
+                      opacity: 1
+                      visibility: visible
+                      left: 16rem
+
+          &__link
+            display: flex
+            align-items: center
+            justify-content: space-between
+            transition: color 0.4s ease
+            @include text($font-size: 1.8rem, $line-height: 1.8rem, $color: $color-grey)
+            &:hover
+              color: $color-accent
+            i
+              font-size: 1.4rem
+
+      &--level2
+        position: absolute
+        top: -1rem
+        left: 20rem
+        z-index: 10
+        min-width: 20rem
+        opacity: 0
+        visibility: hidden
+        padding: 1rem 2rem
+        border-bottom: 3px solid $color-accent
+        background-color: $color-light
+        transition: left 0.4s ease, opacity 0.4s ease, visibility 0.4s ease
+
+    &:hover
+      .dropdown
+        &__list
+          &--level1
+            margin-top: 0
+            opacity: 1
+            visibility: visible
