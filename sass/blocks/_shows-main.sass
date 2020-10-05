@@ -1,0 +1,68 @@
+.shows
+  padding: 12rem 0
+  background-color: $color-grey-bg
+
+  &__section-title
+    position: relative
+    margin-bottom: 4.8rem
+    padding-bottom: 2rem
+    text-align: center
+    @include title($font-size: 3.2rem)
+    &::after
+      content: ""
+      position: absolute
+      bottom: 0
+      left: 50%
+      z-index: 10
+      transform: translateX(-50%)
+      width: 7rem
+      height: 0.2rem
+      background-color: $color-accent
+  &__section-subtitle
+    max-width: 54rem
+    margin: 0 auto 4.8rem
+    text-align: center
+    @include text($font-size: 1.8rem, $line-height: 1.7, $color: rgba($color-light, 0.5))
+
+  &__cards
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &-card
+    position: relative
+    width: 22%
+    cursor: pointer
+    height: 32rem
+    overflow: hidden
+    &__image
+      height: 100%
+      width: 100%
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        transform: scale(1.05)
+        transition: transform 0.4s ease
+    &__content
+      position: absolute
+      bottom: 0
+      left: 0
+      z-index: 10
+    &__title
+      display: inline-block
+      padding: 0.5rem 1rem
+      background-color: $color-accent
+      @include text($font-size: 1.8rem, $line-height: 1, $text-transform: capitalize)
+    &__info
+      display: flex
+      flex-direction: column
+      background-color: $color-dark
+      @include text($font-size: 1.1rem, $line-height: 1, $text-transform: uppercase)
+    &__date, &__name
+      padding: 0.4rem 1rem
+
+    &:hover
+      .shows-card
+        &__image
+          img
+            transform: scale(1)
