@@ -42,7 +42,7 @@
         height: 100%
         object-fit: cover
         transform: scale(1.05)
-        transition: transform 0.4s ease
+        transition: transform 0.8s ease
     &__content
       position: absolute
       bottom: 0
@@ -52,14 +52,16 @@
       display: inline-block
       padding: 0.5rem 1rem
       background-color: $color-accent
-      @include text($font-size: 1.8rem, $line-height: 1, $text-transform: capitalize)
+      @include title($font-size: 2rem, $line-height: 1.2, $text-transform: capitalize)
     &__info
       display: flex
       flex-direction: column
       background-color: $color-dark
       @include text($font-size: 1.1rem, $line-height: 1, $text-transform: uppercase)
-    &__date, &__name
-      padding: 0.4rem 1rem
+    &__date
+      padding: 1rem 1rem 0.5rem
+    &__name
+      padding: 0.5rem 1rem 1rem
 
     &:hover
       .shows-card
