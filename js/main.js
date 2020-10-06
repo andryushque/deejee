@@ -22,10 +22,6 @@ $(document).ready(function () {
     .resize();
 
   // Intro section parallax
-  const introSection = $(".intro");
-  introSection.stellar({
-    scrollProperty: "scroll",
-    horizontalScrolling: false,
-    positionProperty: "position",
-  });
+  const parallaxSection = $(".intro");
+  parallaxSection.parallax();
 });
