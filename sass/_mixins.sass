@@ -1,3 +1,4 @@
+/*=== Text styles ===*/
 @mixin title($font-size: 2rem, $line-height: 1.2, $font-weight: 400, $color: $color-light, $text-transform: uppercase)
   font-family: "Oswald"
   font-size: $font-size
@@ -15,3 +16,16 @@
   line-height: $line-height
   color: $color
   text-transform: $text-transform
+
+/*=== Title underline ===*/
+@mixin title-underline($width: 7rem, $background-color: $color-accent)
+  &::after
+    content: ""
+    position: absolute
+    bottom: 0
+    left: 50%
+    z-index: 10
+    transform: translateX(-50%)
+    width: $width
+    height: 0.2rem
+    background-color: $background-color
