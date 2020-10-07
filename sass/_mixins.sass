@@ -1,5 +1,5 @@
 /*=== Text styles ===*/
-@mixin title($font-size: 2rem, $line-height: 1.2, $font-weight: 400, $color: $color-light, $text-transform: uppercase)
+@mixin title($font-size: 2rem, $line-height: 1.2, $font-weight: 400, $color: $color-light, $text-transform: uppercase, $letter-spacing: 0.2em)
   font-family: "Oswald"
   font-size: $font-size
   font-weight: $font-weight
@@ -7,12 +7,13 @@
   line-height: $line-height
   color: $color
   text-transform: $text-transform
+  letter-spacing: $letter-spacing
 
-@mixin text($font-size: 1.6rem, $line-height: 1.5, $font-weight: 400, $color: $color-light, $text-transform: none)
+@mixin text($font-size: 1.6rem, $line-height: 1.5, $font-weight: 400, $font-style: normal, $color: $color-light, $text-transform: none)
   font-family: "Nunito"
   font-size: $font-size
   font-weight: $font-weight
-  font-style: normal
+  font-style: $font-style
   line-height: $line-height
   color: $color
   text-transform: $text-transform

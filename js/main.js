@@ -32,4 +32,30 @@ $(document).ready(function () {
       return window.innerWidth < maxWidth;
     },
   });
+
+  /*=== Reviews slider ===*/
+  const reviewsSlider = new Swiper(".reviews-slider", {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      767: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
 });
