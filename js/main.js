@@ -24,4 +24,12 @@ $(document).ready(function () {
   // Intro section parallax
   const parallaxSection = $(".intro");
   parallaxSection.parallax();
+
+  /*=== AOS Animation ===*/
+  AOS.init({
+    disable: function () {
+      var maxWidth = 767;
+      return window.innerWidth < maxWidth;
+    },
+  });
 });

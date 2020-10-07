@@ -1,8 +1,17 @@
 .intro
+  position: relative
   height: 100vh
   min-height: 60rem
   padding-top: 9.4rem // header height
   background: transparent
+  &::before
+    position: absolute
+    content: ""
+    left: 0
+    bottom: 0
+    right: 0
+    top: 0
+    background: rgba($color-dark, 0.4)
 
   > .container
     height: 100%
