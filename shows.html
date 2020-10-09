@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Deejee | Shows</title>
+
+    <!-- Fontawesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- === Header Section === -->
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <a href="#" class="logo link">
+            <span class="logo__text">Deejee</span
+            ><span class="logo__text logo__text--accent">.</span>
+          </a>
+
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="index.html" class="nav__link link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="djs.html" class="nav__link link">DJs</a>
+              </li>
+
+              <li class="nav__item dropdown">
+                <a href="shows.html" class="nav__link link"
+                  >Shows
+                  <i class="fas fa-angle-down"></i>
+                </a>
+                <ul class="dropdown__list dropdown__list--level1">
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link link"
+                      >Top 20 of the Week</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link link">Featured Artists</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="dropdown__link link">Interviews</a>
+                  </li>
+                  <li class="dropdown__item dropdown__item--submenu">
+                    <a href="#" class="dropdown__link link"
+                      >More Links
+                      <i class="fas fa-angle-right"></i>
+                    </a>
+                    <ul class="dropdown__list dropdown__list--level2">
+                      <li class="dropdown__item">
+                        <a href="#" class="dropdown__link link">Link #1</a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="#" class="dropdown__link link">Link #2</a>
+                      </li>
+                      <li class="dropdown__item">
+                        <a href="#" class="dropdown__link link">Link #3</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav__item">
+                <a href="events.html" class="nav__link link">Events</a>
+              </li>
+              <li class="nav__item">
+                <a href="about.html" class="nav__link link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="contact.html" class="nav__link link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Mobile menu -->
+          <a class="button mmenubtn mmenubtn--open">
+            <i class="mmenubtn__icon fas fa-bars"></i>
+          </a>
+
+          <nav class="mmenu header__mmenu">
+            <a class="button mmenubtn mmenubtn--close">
+              <i class="mmenu__icon fas fa-times"></i>
+            </a>
+            <ul class="mmenu__list">
+              <li class="mmenu__item">
+                <a href="index.html" class="mmenu__link link">Home</a>
+              </li>
+              <li class="mmenu__item">
+                <a href="djs.html" class="mmenu__link link">DJs</a>
+              </li>
+              <li class="mmenu__item">
+                <a href="shows.html" class="mmenu__link link">Shows</a>
+              </li>
+              <li class="mmenu__item">
+                <a href="events.html" class="mmenu__link link">Events</a>
+              </li>
+              <li class="mmenu__item">
+                <a href="about.html" class="mmenu__link link">About</a>
+              </li>
+              <li class="mmenu__item">
+                <a href="contact.html" class="mmenu__link link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- /.header-wrapper -->
+      </div>
+      <!-- /.container -->
+    </header>
+    <!-- /.header -->
+
+    <!-- === Intro Section === -->
+    <section
+      class="intro"
+      data-parallax="scroll"
+      data-image-src="img/intro/intro-bg.jpg"
+    >
+      <div class="container">
+        <div class="intro-wrapper" data-aos="fade-up" data-aos-delay="500">
+          <h1 class="intro__section-title">Our shows</h1>
+          <p class="intro__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            velit dolorem autem?
+          </p>
+        </div>
+      </div>
+      <!-- /.container -->
+      <!-- /.intro-wrapper -->
+    </section>
+    <!-- /.intro -->
+
+    <!-- === Shows Section === -->
+    <section class="shows">
+      <div class="container">
+        <div class="shows-wrapper">
+          <h2
+            class="shows__section-title"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Upcoming shows
+          </h2>
+          <p
+            class="shows__section-subtitle"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet,
+            fugit nam obcaecati fuga itaque deserunt officia, error reiciendis
+            ab quod?
+          </p>
+
+          <div class="shows__cards">
+            <div
+              class="shows__card shows-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <a href="#" class="shows-card__image">
+                <img src="img/shows/show-1.jpg" alt="Show with Wendy Matos" />
+              </a>
+              <div class="shows-card__content">
+                <h3 class="shows-card__title">This is the day</h3>
+                <div class="shows-card__info">
+                  <span class="shows-card__date">Friday 1:00pm — 2:30pm</span>
+                  <span class="shows-card__name">with Wendy Matos</span>
+                </div>
+              </div>
+            </div>
+            <!-- /.shows__card -->
+
+            <div
+              class="shows__card shows-card"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <a href="#" class="shows-card__image">
+                <img src="img/shows/show-2.jpg" alt="Show with Gaby Tenda" />
+              </a>
+              <div class="shows-card__content">
+                <h3 class="shows-card__title">Electro party</h3>
+                <div class="shows-card__info">
+                  <span class="shows-card__date">Saturday 1:00pm — 2:30pm</span>
+                  <span class="shows-card__name">with Gaby Tenda</span>
+                </div>
+              </div>
+            </div>
+            <!-- /.shows__card -->
+
+            <div
+              class="shows__card shows-card"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <a href="#" class="shows-card__image">
+                <img src="img/shows/show-3.jpg" alt="Show with James Tenda" />
+              </a>
+              <div class="shows-card__content">
+                <h3 class="shows-card__title">Classic hits</h3>
+                <div class="shows-card__info">
+                  <span class="shows-card__date">Saturday 0:00pm — 1:00pm</span>
+                  <span class="shows-card__name">with James Tenda</span>
+                </div>
+              </div>
+            </div>
+            <!-- /.shows__card -->
+
+            <div
+              class="shows__card shows-card"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <a href="#" class="shows-card__image">
+                <img src="img/shows/show-4.jpg" alt="Show with Troy Peters" />
+              </a>
+              <div class="shows-card__content">
+                <h3 class="shows-card__title">Classic songs</h3>
+                <div class="shows-card__info">
+                  <span class="shows-card__date">Sunday 1:00pm — 2:30pm</span>
+                  <span class="shows-card__name">with Troy Peters</span>
+                </div>
+              </div>
+            </div>
+            <!-- /.shows__card -->
+          </div>
+          <!-- /.shows__cards -->
+        </div>
+        <!-- /.shows-wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.shows -->
+
+    <section class="audio">
+      <div class="container">
+        <div class="audio-wrapper">
+          <div class="audio__cards">
+            <div class="audio__card audio-card">
+              <div class="audio-card__image">
+                <img src="img/audio-covers/cover-1.jpg" alt="Cover-1" />
+              </div>
+              <div class="audio-card__content">
+                <h3 class="audio-card__title">One Hit Wonder</h3>
+                <div class="audio-card__info">
+                  <span class="audio-card__author">By Mike Smith</span>
+                  <span class="audio-card__date">16 September 2020</span>
+                  <span class="audio-card__length">1:30:20</span>
+                </div>
+                <p class="audio-card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Corrupti repellat mollitia consequatur, optio nesciunt
+                  placeat. Iste voluptates excepturi tenetur, nesciunt.
+                </p>
+                <audio class="audio-card__player" controls>
+                  <source
+                    src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3"
+                    type="audio/mp3"
+                  />
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <!-- /.audio-card__content -->
+            </div>
+            <!-- /.audio__card 1 -->
+
+            <div class="audio__card audio-card">
+              <div class="audio-card__image">
+                <img src="img/audio-covers/cover-2.jpg" alt="Cover-2" />
+              </div>
+              <div class="audio-card__content">
+                <h3 class="audio-card__title">Tired Bones</h3>
+                <div class="audio-card__info">
+                  <span class="audio-card__author">By Mike Smith</span>
+                  <span class="audio-card__date">16 September 2020</span>
+                  <span class="audio-card__length">1:30:20</span>
+                </div>
+                <p class="audio-card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Optio, velit. Eaque fuga, non distinctio aspernatur nostrum
+                  facilis officia et provident, eius soluta totam recusandae
+                  sed. Sequi, ipsa cumque. Cupiditate iure ratione debitis.
+                </p>
+                <audio class="audio-card__player" controls>
+                  <source
+                    src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3"
+                    type="audio/mp3"
+                  />
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <!-- /.audio-card__content -->
+            </div>
+            <!-- /.audio__card 2 -->
+
+            <div class="audio__card audio-card">
+              <div class="audio-card__image">
+                <img src="img/audio-covers/cover-3.jpg" alt="Cover-3" />
+              </div>
+              <div class="audio-card__content">
+                <h3 class="audio-card__title">Take Me Back</h3>
+                <div class="audio-card__info">
+                  <span class="audio-card__author">By Mike Smith</span>
+                  <span class="audio-card__date">16 September 2020</span>
+                  <span class="audio-card__length">1:30:20</span>
+                </div>
+                <p class="audio-card__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Maxime in debitis ea nobis corporis animi iste velit, soluta
+                  quia ullam ratione praesentium, dignissimos, nulla aspernatur
+                  assumenda id unde?
+                </p>
+                <audio class="audio-card__player" controls>
+                  <source
+                    src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3"
+                    type="audio/mp3"
+                  />
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <!-- /.audio-card__content -->
+            </div>
+            <!-- /.audio__card 3 -->
+
+            <div class="audio__card audio-card">
+              <div class="audio-card__image">
+                <img src="img/audio-covers/cover-4.jpg" alt="Cover-4" />
+              </div>
+              <div class="audio-card__content">
+                <h3 class="audio-card__title">Who's Got Your Love</h3>
+                <div class="audio-card__info">
+                  <span class="audio-card__author">By Mike Smith</span>
+                  <span class="audio-card__date">16 September 2020</span>
+                  <span class="audio-card__length">1:30:20</span>
+                </div>
+                <p class="audio-card__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  reprehenderit accusamus alias? Sunt, hic voluptate. Libero
+                  quas dolore aliquid! Suscipit repellat repellendus, at
+                  similique tenetur perspiciatis velit facilis sunt quae.
+                </p>
+                <audio class="audio-card__player" controls>
+                  <source
+                    src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3"
+                    type="audio/mp3"
+                  />
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <!-- /.audio-card__content -->
+            </div>
+            <!-- /.audio__card 4 -->
+
+            <div class="audio__card audio-card">
+              <div class="audio-card__image">
+                <img src="img/audio-covers/cover-5.jpg" alt="Cover-5" />
+              </div>
+              <div class="audio-card__content">
+                <h3 class="audio-card__title">Don't Waste My Time</h3>
+                <div class="audio-card__info">
+                  <span class="audio-card__author">By Mike Smith</span>
+                  <span class="audio-card__date">16 September 2020</span>
+                  <span class="audio-card__length">1:30:20</span>
+                </div>
+                <p class="audio-card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Corrupti repellat mollitia consequatur, optio nesciunt
+                  placeat. Iste voluptates excepturi tenetur, nesciunt.
+                </p>
+                <audio class="audio-card__player" controls>
+                  <source
+                    src="http://www.largesound.com/ashborytour/sound/AshboryBYU.mp3"
+                    type="audio/mp3"
+                  />
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+              <!-- /.audio-card__content -->
+            </div>
+            <!-- /.audio__card 5 -->
+          </div>
+          <!-- /.audio__cards -->
+
+          <div class="audio__tabs">
+            <ul class="audio__list">
+              <li class="audio__list-item">
+                <a href="#" class="audio__list-link link"><</a>
+              </li>
+              <li class="audio__list-item">
+                <a href="#" class="audio__list-link link active">1</a>
+              </li>
+              <li class="audio__list-item">
+                <a href="#" class="audio__list-link link">2</a>
+              </li>
+              <li class="audio__list-item">
+                <a href="#" class="audio__list-link link">3</a>
+              </li>
+              <li class="audio__list-item">
+                <a href="#" class="audio__list-link link">4</a>
+              </li>
+              <li class="audio__list-item">
+                <a href="#" class="audio__list-link link">5</a>
+              </li>
+              <li class="audio__list-item">
+                <a href="#" class="audio__list-link link">></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.audio-wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.audio -->
+
+    <!-- === Social Links Section === -->
+    <div class="social">
+      <div class="container">
+        <div class="social-wrapper">
+          <a href="#" class="social__link link"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="social__link link"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="#" class="social__link link"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="#" class="social__link link"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="#" class="social__link link"
+            ><i class="fab fa-pinterest-p"></i
+          ></a>
+          <a href="#" class="social__link link"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+        <!-- /.social-wrapper -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.social -->
+
+    <!-- === Footer Section === -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer__item">
+            <h3 class="footer__title">About deejee</h3>
+            <p class="footer__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              corporis ea placeat accusantium quas dignissimos possimus facere
+              impedit dolore fugit.
+            </p>
+          </div>
+          <!-- /.footer__item -->
+
+          <div class="footer__item">
+            <h3 class="footer__title">Navigations</h3>
+            <div class="footer__lists">
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link link">Home</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link link">DJs</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link link">News</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link link"
+                    >Top 20 of the week</a
+                  >
+                </li>
+              </ul>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link link">About Us</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link link">Privacy Policy</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link link">Contact Us</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link link">Membership</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.footer__item -->
+
+          <div class="footer__item">
+            <h3 class="footer__title">Watch live streaming</h3>
+            <div class="footer__video footer-video">
+              <img
+                src="img/live-stream/stream-1.jpg"
+                alt="Stream-1"
+                class="footer-video__image"
+              />
+              <a
+                data-fancybox
+                href="https://www.youtube.com/watch?v=ScMzIvxBSi4"
+                class="footer-video__link link"
+              >
+                <i class="fas fa-play"></i>
+              </a>
+            </div>
+          </div>
+          <!-- /.footer__item -->
+
+          <div class="footer__item">
+            <h3 class="footer__title">Subscribe</h3>
+            <form action="send.php" method="POST" class="footer__form form">
+              <input
+                type="email"
+                class="input form__input"
+                placeholder="Enter your email"
+                name="subscribe-email"
+                minlength="2"
+                required
+              />
+              <button
+                type="submit"
+                name="form"
+                value="subscribe-form"
+                class="button form__button"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+          <!-- /.footer__item -->
+
+          <div class="footer__item">
+            <h3 class="footer__title">Follow us</h3>
+            <div class="footer__social-links">
+              <a href="#" class="footer__social-link link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="footer__social-link link"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="footer__social-link link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="footer__social-link link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <!-- /.footer__item -->
+        </div>
+        <!-- /.footer-wrapper -->
+
+        <div class="footer-copyright copyright">
+          <div class="footer-copyright__content">
+            <span class="footer-copyright__text">
+              Copyright ©2020 All rights reserved
+            </span>
+            <span class="footer-copyright__text">
+              This template is made with
+              <i class="footer-copyright__icon far fa-heart"></i> by
+              <a
+                href="https://colorlib.com/"
+                class="footer-copyright__link link"
+                target="_blank"
+                >Colorlib</a
+              >
+            </span>
+          </div>
+        </div>
+        <!-- /.footer-copyright -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+
+    <!-- jQuery -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+    <!-- Parallax.js -->
+    <script src="js/parallax.min.js"></script>
+    <!-- AOS - animation on scroll -->
+    <script src="js/aos.js"></script>
+    <!-- Swiper slider -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Fancybox - video plugin -->
+    <script src="js/jquery.fancybox.min.js"></script>
+
+    <!-- Main js file -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

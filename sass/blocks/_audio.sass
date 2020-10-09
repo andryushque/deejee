@@ -1,0 +1,84 @@
+.audio
+  padding: 12rem 0
+  background-color: $color-grey-bg2
+
+  &__card
+    margin-bottom: 6rem
+  &-card
+    display: flex
+    background-color: $color-light
+    &__image
+      width: 32rem
+      min-width: 32rem
+      height: 32rem
+      overflow: hidden
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        transform: scale(1.1)
+        transition: transform 0.8s ease
+        &:hover
+          transform: scale(1)
+    &__content
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      padding: 4rem
+    &__title
+      margin-bottom: 0.8rem
+      @include title($font-size: 2.8rem, $color: $color-accent, $text-transform: capitalize, $letter-spacing: normal)
+    &__info
+      margin-bottom: 1.6rem
+      @include text($font-size: 1.3rem, $color: $color-dark)
+      span
+        position: relative
+        display: inline-block
+        margin-right: 1rem
+        &::after
+          content: "/"
+          position: absolute
+          right: -0.8rem
+          top: 0
+          z-index: 10
+        &:last-child
+          margin-right: 0
+          &::after
+            display: none
+    &__text
+      margin-bottom: 1.6rem
+      @include text($font-size: 1.6rem, $color: $color-dark)
+
+    &__player
+      margin-top: auto
+      width: 50%
+      border-radius: 2rem
+
+  &__tabs
+    display: flex
+    align-items: center
+    justify-content: center
+  &__list
+    display: flex
+    align-items: center
+    &-item
+      margin: 0 0.4rem
+    &-link
+      width: 4rem
+      height: 4rem
+      display: flex
+      align-items: center
+      justify-content: center
+      border: 1px solid $color-light
+      border-radius: 50%
+      color: $color-accent
+      font-size: 1.6rem
+      transition: background-color 0.4s ease, color 0.4s ease, border 0.4s ease
+      &.active
+        background-color: $color-accent
+        color: $color-light
+        border: 1px solid $color-accent
+      &:hover
+        background-color: $color-accent
+        color: $color-light
+        border: 1px solid $color-accent
