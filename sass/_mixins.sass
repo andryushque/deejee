@@ -30,3 +30,22 @@
     width: $width
     height: 0.2rem
     background-color: $background-color
+
+@mixin fancybox-link($size: 7rem, $color: $color-accent)
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 10
+  display: flex
+  justify-content: center
+  align-items: center
+  width: $size
+  height: $size
+  border-radius: 50%
+  background-color: $color-light
+  font-size: $size / 3.5
+  color: $color
+  transition: color 0.4s ease
+  &:hover
+    color: rgba($color, 0.75)
