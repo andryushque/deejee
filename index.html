@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -755,17 +756,154 @@
     <!-- /.social -->
 
     <!-- === Footer Section === -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer__item">
+            <h3 class="footer__title">About deejee</h3>
+            <p class="footer__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              corporis ea placeat accusantium quas dignissimos possimus facere
+              impedit dolore fugit.
+            </p>
+          </div>
+          <!-- /.footer__item -->
+
+          <div class="footer__item">
+            <h3 class="footer__title">Navigations</h3>
+            <div class="footer__lists">
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link link">Home</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link link">DJs</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link link">News</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link link"
+                    >Top 20 of the week</a
+                  >
+                </li>
+              </ul>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link link">About Us</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link link">Privacy Policy</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link link">Contact Us</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link link">Membership</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.footer__item -->
+
+          <div class="footer__item">
+            <h3 class="footer__title">Watch live streaming</h3>
+            <div class="footer__video footer-video">
+              <img
+                src="img/live-stream/stream-1.jpg"
+                alt="Stream-1"
+                class="footer-video__image"
+              />
+              <a
+                data-fancybox
+                href="https://www.youtube.com/watch?v=ScMzIvxBSi4"
+                class="footer-video__link link"
+              >
+                <i class="fas fa-play"></i>
+              </a>
+            </div>
+          </div>
+          <!-- /.footer__item -->
+
+          <div class="footer__item">
+            <h3 class="footer__title">Subscribe</h3>
+            <form action="send.php" method="POST" class="footer__form form">
+              <input
+                type="email"
+                class="input form__input"
+                placeholder="Enter your email"
+                name="subscribe-email"
+                minlength="2"
+                required
+              />
+              <button
+                type="submit"
+                name="form"
+                value="subscribe-form"
+                class="button form__button"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+          <!-- /.footer__item -->
+
+          <div class="footer__item">
+            <h3 class="footer__title">Follow us</h3>
+            <div class="footer__social-links">
+              <a href="#" class="footer__social-link link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="footer__social-link link"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="footer__social-link link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="footer__social-link link"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <!-- /.footer__item -->
+        </div>
+        <!-- /.footer-wrapper -->
+
+        <div class="footer-copyright copyright">
+          <div class="footer-copyright__content">
+            <span class="footer-copyright__text">
+              Copyright ©2020 All rights reserved
+            </span>
+            <span class="footer-copyright__text">
+              This template is made with
+              <i class="footer-copyright__icon far fa-heart"></i> by
+              <a
+                href="https://colorlib.com/"
+                class="footer-copyright__link link"
+                target="_blank"
+                >Colorlib</a
+              >
+            </span>
+          </div>
+        </div>
+        <!-- /.footer-copyright -->
+      </div>
+      <!-- /.container -->
+    </footer>
     <!-- /.footer -->
 
     <!-- jQuery -->
     <script src="js/jquery-3.5.1.min.js"></script>
+
     <!-- Parallax.js -->
     <script src="js/parallax.min.js"></script>
     <!-- AOS - animation on scroll -->
     <script src="js/aos.js"></script>
     <!-- Swiper slider -->
     <script src="js/swiper-bundle.min.js"></script>
+    <!-- Fancybox - video plugin -->
+    <script src="js/jquery.fancybox.min.js"></script>
+
     <!-- Main js file -->
     <script src="js/main.js"></script>
   </body>

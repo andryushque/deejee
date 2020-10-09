@@ -19,14 +19,14 @@
   text-transform: $text-transform
 
 /*=== Title underline ===*/
-@mixin title-underline($width: 7rem, $background-color: $color-accent)
+@mixin title-underline($width: 7rem, $left: 50%, $background-color: $color-accent)
   &::after
     content: ""
     position: absolute
     bottom: 0
-    left: 50%
+    left: $left
     z-index: 10
-    transform: translateX(-50%)
+    transform: translateX(-$left)
     width: $width
     height: 0.2rem
     background-color: $background-color
