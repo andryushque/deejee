@@ -82,3 +82,35 @@
     &__link
       padding: 1.8rem
       font-size: 1.6rem
+
+  .footer
+    padding: 8rem 0
+    &-wrapper
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(5, min-content)
+      grid-auto-rows: 24rem
+      grid-gap: 2rem
+    &__item
+      &:nth-child(1)
+        order: 1
+      &:nth-child(2)
+        order: 2
+      &:nth-child(3)
+        grid-row: span 1
+        order: 5
+      &:nth-child(4)
+        order: 3
+      &:nth-child(5)
+        order: 4
+    &-video
+      height: 48rem
+
+    &-copyright
+      &__content
+        flex-direction: column
+      &__text
+        &:first-child
+          margin-right: 0
+          margin-bottom: 1rem
+          &::after
+            display: none
