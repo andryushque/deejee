@@ -6,7 +6,7 @@
 
 ### Tech stack
 
-HTML5, CSS3 / SASS, JavaScript / jQuery, PHP
+HTML5, CSS3 / SASS, JavaScript / jQuery
 
 ### Links to website
 
