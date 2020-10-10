@@ -11,6 +11,7 @@
     bottom: 0
     right: 0
     top: 0
+    z-index: 0
     background: rgba($color-dark, 0.4)
 
   > .container
@@ -24,14 +25,14 @@
     flex-direction: column
   &__section-title
     position: relative
-    z-index: 1000
+    z-index: 100
     max-width: 63rem
     margin-bottom: 2.4rem
     text-align: center
     @include title($font-size: 6.4rem, $letter-spacing: 0.1em)
   &__button
     position: relative
-    z-index: 1000
+    z-index: 100
     display: inline-block
     padding: 1.6rem 2.4rem
     border-radius: 0.6rem
@@ -42,6 +43,8 @@
       background-color: $color-light
       color: $color-accent
   &__text
+    position: relative
+    z-index: 100
     max-width: 54rem
     margin: 0 auto
     text-align: center
