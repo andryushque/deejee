@@ -66,3 +66,33 @@
         &__image
           img
             transform: scale(1)
+
+  &__tabs
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-top: 3rem
+  &__list
+    display: flex
+    align-items: center
+    &-item
+      margin: 0 0.4rem
+    &-link
+      width: 4rem
+      height: 4rem
+      display: flex
+      align-items: center
+      justify-content: center
+      border: 1px solid $color-light
+      border-radius: 50%
+      color: $color-accent
+      font-size: 1.6rem
+      transition: background-color 0.4s ease, color 0.4s ease, border 0.4s ease
+      &.active
+        background-color: $color-accent
+        color: $color-light
+        border: 1px solid $color-accent
+      &:hover
+        background-color: $color-accent
+        color: $color-light
+        border: 1px solid $color-accent
